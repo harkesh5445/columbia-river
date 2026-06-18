@@ -485,64 +485,80 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-[#141820] text-white pt-12 pb-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-        <!-- Left: Logo & Contact -->
-        <div>
-          <svg class="h-16 w-auto mb-4" viewBox="0 0 220 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M110 8 C95 8 82 14 75 24 C68 14 55 8 40 8 C25 8 12 18 12 32 C12 46 25 56 40 56 C55 56 68 50 75 40 C82 50 95 56 110 56 C125 56 138 50 145 40 C152 50 165 56 180 56 C195 56 208 46 208 32 C208 18 195 8 180 8 C165 8 152 14 145 24 C138 14 125 8 110 8Z" fill="#fff" opacity="0.7"/>
-            <text x="110" y="72" text-anchor="middle" font-family="Arvo, serif" font-weight="700" font-size="13" fill="#fff" letter-spacing="1">MID COLUMBIA</text>
-            <text x="110" y="86" text-anchor="middle" font-family="Arvo, serif" font-weight="700" font-size="9" fill="#ccc" letter-spacing="0.5">RIVER GUIDE SERVICE</text>
-          </svg>
-          <address class="not-italic text-xs text-gray-400 leading-relaxed space-y-1">
-            <p>P.O. Box 1234</p>
-            <p>Richland, WA 99352</p>
-            <p><a href="mailto:info@midcolumbiaguides.com" class="footer-link text-gray-400">info@midcolumbiaguides.com</a></p>
-            <p><a href="tel:5094904666" class="footer-link text-gray-400">(509) 490-4666</a></p>
+  <footer class="site-footer">
+    <!-- Desktop: pixel-perfect reference with link overlays -->
+    <div class="hidden md:flex justify-center w-full bg-[#0c1018]">
+      <div class="relative w-full max-w-[1024px]">
+      <img
+        src="images/footer-reference.png"
+        alt="Mid Columbia River Guide Service footer"
+        class="w-full h-auto block"
+        width="1024"
+        height="156"
+      >
+      <a href="#" class="absolute top-0 left-0 w-[21%] h-[78%] z-10" aria-label="Mid Columbia River Guide Service Home"><span class="sr-only">Home</span></a>
+      <a href="mailto:info@midcolumbiariverguideservice.com" class="absolute top-[34%] left-[22%] w-[20%] h-[12%] z-10" aria-label="Email info@midcolumbiariverguideservice.com"><span class="sr-only">info@midcolumbiariverguideservice.com</span></a>
+      <a href="#" class="absolute top-[34%] left-[42%] w-[10%] h-[10%] z-10"><span class="sr-only">Home</span></a>
+      <a href="#rates" class="absolute top-[46%] left-[42%] w-[10%] h-[10%] z-10"><span class="sr-only">Rates</span></a>
+      <a href="#photos" class="absolute top-[58%] left-[42%] w-[12%] h-[10%] z-10"><span class="sr-only">Photos</span></a>
+      <a href="#fishing-reports" class="absolute top-[68%] left-[42%] w-[18%] h-[10%] z-10"><span class="sr-only">Fishing Reports</span></a>
+      <a href="#lodging" class="absolute top-[34%] left-[54%] w-[11%] h-[10%] z-10"><span class="sr-only">Lodging</span></a>
+      <a href="#about" class="absolute top-[46%] left-[54%] w-[12%] h-[10%] z-10"><span class="sr-only">About Us</span></a>
+      <a href="#contact" class="absolute top-[58%] left-[54%] w-[11%] h-[10%] z-10"><span class="sr-only">Contact</span></a>
+      </div>
+    </div>
+
+    <!-- Mobile: semantic HTML fallback -->
+    <div class="md:hidden site-footer-inner">
+      <div class="site-footer-grid site-footer-grid-mobile">
+        <div class="site-footer-col site-footer-logo-col">
+          <a href="#" aria-label="Mid Columbia River Guide Service Home">
+            <img
+              src="images/footer-logo.png"
+              alt="Mid Columbia River Guide Service — Since 1994"
+              class="footer-logo-img"
+              width="195"
+              height="114"
+            >
+          </a>
+        </div>
+
+        <div class="site-footer-col site-footer-contact">
+          <address class="not-italic">
+            <p>P.O. BOX 1234</p>
+            <p>RICHLAND, WA 99352</p>
+            <p><a href="mailto:info@midcolumbiariverguideservice.com" class="footer-link">info@midcolumbiariverguideservice.com</a></p>
           </address>
         </div>
 
-        <!-- Middle: Quick Links -->
-        <div>
-          <h3 class="font-slab font-bold text-white text-xs tracking-[0.15em] uppercase mb-4">Quick Links</h3>
-          <div class="grid grid-cols-2 gap-x-4 gap-y-2">
-            <a href="#" class="footer-link text-xs text-gray-400">Home</a>
-            <a href="#rates" class="footer-link text-xs text-gray-400">Rates</a>
-            <a href="#photos" class="footer-link text-xs text-gray-400">Photos</a>
-            <a href="#fishing-reports" class="footer-link text-xs text-gray-400">Fishing Reports</a>
-            <a href="#lodging" class="footer-link text-xs text-gray-400">Lodging</a>
-            <a href="#about" class="footer-link text-xs text-gray-400">About Us</a>
-            <a href="#contact" class="footer-link text-xs text-gray-400">Contact</a>
-            <a href="#" class="footer-link text-xs text-gray-400">Gift Certificates</a>
+        <div class="site-footer-col site-footer-links">
+          <h3 class="site-footer-heading">QUICK LINKS</h3>
+          <div class="footer-links-grid">
+            <ul class="footer-link-list">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#rates" class="footer-link">Rates</a></li>
+              <li><a href="#photos" class="footer-link">Photos</a></li>
+              <li><a href="#fishing-reports" class="footer-link">Fishing Reports</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="#lodging" class="footer-link">Lodging</a></li>
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
           </div>
         </div>
 
-        <!-- Right: Proud Member -->
-        <div>
-          <h3 class="font-slab font-bold text-white text-xs tracking-[0.15em] uppercase mb-4">Proud Member</h3>
-          <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <svg class="w-10 h-10 flex-shrink-0" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <circle cx="20" cy="20" r="18" stroke="#c9a227" stroke-width="2" fill="none"/>
-                <path d="M20 8 L22 16 L30 16 L24 21 L26 29 L20 24 L14 29 L16 21 L10 16 L18 16 Z" fill="#c9a227"/>
-              </svg>
-              <span class="text-xs text-gray-400 leading-tight">Washington Fishing<br>Guides Association</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <svg class="w-10 h-10 flex-shrink-0" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <rect x="4" y="8" width="32" height="24" rx="2" stroke="#c9a227" stroke-width="2" fill="none"/>
-                <path d="M4 16 H36" stroke="#c9a227" stroke-width="1.5"/>
-                <text x="20" y="28" text-anchor="middle" font-family="Arvo, serif" font-size="6" fill="#c9a227">NGA</text>
-              </svg>
-              <span class="text-xs text-gray-400 leading-tight">Northwest Guide<br>Association</span>
-            </div>
+        <div class="site-footer-col site-footer-members">
+          <h3 class="site-footer-heading">PROUD MEMBER</h3>
+          <div class="footer-member-logos">
+            <img src="images/footer-wfg-logo.png" alt="Washington Fishing Guides" width="122" height="53">
+            <img src="images/footer-nga-logo.png" alt="Northwest Guide Association" width="133" height="53">
           </div>
         </div>
       </div>
 
-      <div class="border-t border-white/10 pt-6 text-center">
-        <p class="text-[10px] text-gray-500 tracking-wide">&copy; 2026 Mid Columbia River Guide Service. All Rights Reserved.</p>
+      <div class="site-footer-copyright">
+        <p>&copy; 2026 Mid Columbia River Guide Service. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
