@@ -3,567 +3,367 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mid Columbia River Guide Service - Professional fishing guides for Sturgeon, Salmon, Walleye and Steelhead on the Columbia River since 1994. Call (509) 490-4666.">
-  <meta name="keywords" content="Columbia River fishing guide, sturgeon fishing, salmon fishing, walleye, steelhead, Richland WA">
+  <meta name="description" content="Mid Columbia River Guide Service — Professional fishing guides for Sturgeon, Salmon, Walleye and Steelhead on the Columbia River since 1994. Call (509) 490-4666.">
   <title>Mid Columbia River Guide Service | Columbia River Fishing at Its Best</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Caveat:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { DEFAULT: '#1a202c', dark: '#0f1419', mid: '#2a3544' },
-            brand: { red: '#8b2318', gold: '#d4af37', cream: '#e8dcc8', parchment: '#e8dcc8', wood: '#3d2817' },
-          },
-          fontFamily: {
-            slab: ['Arvo', 'Georgia', 'serif'],
-            script: ['Great Vibes', 'cursive'],
-            scriptHeader: ['Yellowtail', 'cursive'],
-            handwritten: ['Caveat', 'cursive'],
-            body: ['Montserrat', 'sans-serif'],
-            condensed: ['Oswald', 'sans-serif'],
-          },
-        },
-      },
-    };
-  </script>
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-body bg-brand-cream">
+<body>
 
-  <!-- ========== HEADER ========== -->
-  <header id="site-header" class="relative z-50">
-    <!-- Top Bar (above nav) -->
-    <div class="header-top-bar">
-      <!-- Desktop: pixel-perfect reference image with clickable overlays -->
-      <div class="hidden md:block relative">
-        <img
-          src="images/header-reference.png"
-          alt="Mid Columbia River Guide Service — Call (509) 490-4666"
-          class="w-full h-auto block"
-          width="1024"
-          height="204"
-        >
-        <a href="#" class="absolute top-0 left-0 w-[42%] h-full z-10" aria-label="Mid Columbia River Guide Service Home"><span class="sr-only">Home</span></a>
-        <a href="tel:5094904666" class="absolute top-[18%] right-[14%] w-[32%] h-[50%] z-10" aria-label="Call (509) 490-4666"><span class="sr-only">(509) 490-4666</span></a>
-        <a href="#" class="social-icon absolute bottom-[14%] right-[7.5%] w-[22px] h-[22px] z-10" aria-label="Facebook"><span class="sr-only">Facebook</span></a>
-        <a href="#" class="social-icon absolute bottom-[14%] right-[3%] w-[22px] h-[22px] z-10" aria-label="Instagram"><span class="sr-only">Instagram</span></a>
-      </div>
-
-      <!-- Mobile: HTML fallback -->
-      <div class="md:hidden">
-        <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
-          <div class="header-top-inner relative flex items-center justify-between min-h-[100px] py-2">
-            <a href="#" class="header-logo flex-shrink-0" aria-label="Mid Columbia River Guide Service Home">
-              <img
-                src="images/logo-cropped.png"
-                alt="Mid Columbia River Guide Service — Since 1994"
-                class="h-[80px] w-auto object-contain object-left"
-                width="400"
-                height="204"
-              >
+  <header class="site-header" id="site-header">
+    <div class="header-top texture-header">
+      <div class="site-wrap">
+        <a href="#" class="brand-logo" aria-label="Mid Columbia River Guide Service home">
+          <svg class="brand-logo__fish" viewBox="0 0 120 60" fill="none" aria-hidden="true">
+            <path d="M8 30 C20 18 40 14 58 20 C72 25 82 22 95 14 L108 30 L95 46 C82 38 72 35 58 40 C40 46 20 42 8 30 Z" fill="#2a3544" opacity="0.85"/>
+            <path d="M95 14 L108 30 L95 46" fill="#1a2744"/>
+            <circle cx="72" cy="28" r="3" fill="#ede0c8"/>
+            <path d="M30 26 L50 30 L30 34 Z" fill="#8b1e2f" opacity="0.7"/>
+          </svg>
+          <span class="brand-logo__title">MID COLUMBIA</span>
+          <span class="brand-logo__sub">RIVER GUIDE SERVICE</span>
+          <span class="brand-logo__ribbon">&bull; Since 1994 &bull;</span>
+        </a>
+        <div class="header-contact">
+          <p class="header-call">Call Today!</p>
+          <a href="tel:5094904666" class="header-phone phone-link">(509) 490-4666</a>
+          <p class="header-licensed">Fully Licensed &amp; Insured</p>
+          <div class="header-social">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href="tel:5094904666" class="font-condensed font-bold text-[#1c2a3a] text-lg phone-link">(509) 490-4666</a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
           </div>
         </div>
       </div>
-
-      <div class="header-top-border" aria-hidden="true"></div>
     </div>
 
-    <!-- Navigation Bar -->
     <nav class="nav-bar" aria-label="Main navigation">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="hidden lg:flex items-center justify-center">
-          <a href="#" class="nav-link nav-link-active font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">Home</a>
-          <div class="nav-divider"></div>
-          <a href="#rates" class="nav-link font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">Rates</a>
-          <div class="nav-divider"></div>
-          <a href="#photos" class="nav-link font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">Photos</a>
-          <div class="nav-divider"></div>
-          <a href="#fishing-reports" class="nav-link font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">Fishing Reports</a>
-          <div class="nav-divider"></div>
-          <a href="#lodging" class="nav-link font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">Lodging</a>
-          <div class="nav-divider"></div>
-          <a href="#about" class="nav-link font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">About Us</a>
-          <div class="nav-divider"></div>
-          <a href="#contact" class="nav-link font-slab text-white text-xs tracking-[0.15em] uppercase px-5 py-3 font-bold">Contact</a>
+      <div class="site-wrap">
+        <span class="nav-mobile-label">Menu</span>
+        <div class="nav-desktop">
+          <a href="#" class="nav-link is-active">Home</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a href="#rates" class="nav-link">Rates</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a href="#photos" class="nav-link">Photos</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a href="#fishing-reports" class="nav-link">Fishing Reports</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a href="#lodging" class="nav-link">Lodging</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a href="#about" class="nav-link">About Us</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a href="#contact" class="nav-link">Contact</a>
         </div>
-
-        <!-- Mobile Nav Toggle -->
-        <div class="lg:hidden flex items-center justify-between py-3">
-          <span class="font-slab text-white text-xs tracking-[0.15em] uppercase font-bold">Menu</span>
-          <button id="hamburger" class="hamburger flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger" id="hamburger"><span></span><span></span><span></span></span>
+        </button>
       </div>
     </nav>
   </header>
 
-  <!-- Mobile Menu Overlay -->
-  <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/60 z-[60]"></div>
-  <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-72 bg-navy z-[70] shadow-2xl">
-    <div class="p-6 pt-20">
-      <nav aria-label="Mobile navigation">
-        <ul class="space-y-1">
-          <li><a href="#" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 bg-brand-red rounded font-bold">Home</a></li>
-          <li><a href="#rates" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 hover:bg-white/10 rounded font-bold">Rates</a></li>
-          <li><a href="#photos" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 hover:bg-white/10 rounded font-bold">Photos</a></li>
-          <li><a href="#fishing-reports" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 hover:bg-white/10 rounded font-bold">Fishing Reports</a></li>
-          <li><a href="#lodging" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 hover:bg-white/10 rounded font-bold">Lodging</a></li>
-          <li><a href="#about" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 hover:bg-white/10 rounded font-bold">About Us</a></li>
-          <li><a href="#contact" class="mobile-nav-link block font-slab text-white text-sm tracking-wider uppercase py-3 px-4 hover:bg-white/10 rounded font-bold">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="mt-8 pt-6 border-t border-white/20">
-        <p class="font-script text-brand-red text-2xl">Call Today!</p>
-        <a href="tel:5094904666" class="font-slab font-bold text-white text-xl phone-link">(509) 490-4666</a>
-      </div>
-    </div>
-  </div>
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#" class="is-active">Home</a>
+    <a href="#rates">Rates</a>
+    <a href="#photos">Photos</a>
+    <a href="#fishing-reports">Fishing Reports</a>
+    <a href="#lodging">Lodging</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <main>
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero-section relative flex items-center" aria-label="Hero banner">
-      <div class="absolute inset-0">
-        <img src="images/hero.jpg" alt="Wooldridge fishing boat on the Columbia River with rocky canyon hills" class="hero-image w-full h-full object-cover" width="1920" height="640">
-        <div class="hero-overlay absolute inset-0"></div>
-      </div>
-      <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-10 md:py-14 lg:py-16 w-full">
-        <div class="max-w-xl lg:max-w-2xl fade-in">
-          <h1 class="hero-title font-slab font-bold text-white uppercase leading-[1.08]">
-            Columbia River Fishing<br>at Its Best!
-          </h1>
 
-          <div class="hero-star-divider" aria-hidden="true">
-            <span class="hero-star-line"></span>
-            <span class="hero-star">&#9733;</span>
-            <span class="hero-star-line"></span>
-          </div>
-
-          <p class="hero-subtitle font-script">
-            Sturgeon &bull; Salmon &bull; Walleye &bull; Steelhead
-          </p>
-
-          <p class="hero-body font-body text-white text-[13px] md:text-[14px] mt-4 max-w-md leading-relaxed">
-            Experience the Columbia River with local guides who know these waters better than anyone.
-          </p>
-
-          <div class="flex flex-wrap gap-3 mt-6 md:mt-7">
-            <a href="#photos" class="btn-hero btn-hero-navy">
-              <span>View Photos</span>
-              <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            </a>
-            <a href="tel:5094904666" class="btn-hero btn-hero-red">
-              <span>Call Now</span>
-              <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-            </a>
-          </div>
+    <section class="hero" aria-labelledby="hero-heading">
+      <img class="hero__bg" src="images/stock/hero.jpg" alt="" width="1920" height="1080" fetchpriority="high">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="site-wrap">
+        <h1 class="hero__title fade-in" id="hero-heading">Columbia River Fishing<br>at Its Best!</h1>
+        <div class="hero__divider fade-in" aria-hidden="true">
+          <span></span><span class="star">★</span><span></span>
+        </div>
+        <p class="hero__script fade-in">Sturgeon &bull; Salmon &bull; Walleye &bull; Steelhead</p>
+        <p class="hero__body fade-in">Experience the Columbia River with local guides who know these waters better than anyone.</p>
+        <div class="hero__actions fade-in">
+          <a href="#photos" class="btn btn--navy">
+            <span>View Photos</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </a>
+          <a href="tel:5094904666" class="btn btn--red">
+            <span>Call Now</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ========== PHOTO COLLAGE ========== -->
-    <section id="photos" class="bg-wood relative py-16 md:py-20 overflow-hidden" aria-label="Photo gallery collage">
-      <div class="collage-container relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[520px] md:min-h-[600px] lg:min-h-[680px]">
-
-        <!-- Polaroid Photos -->
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 lg:w-40 z-[5]" style="top: 2%; left: 3%; transform: rotate(-8deg);">
-          <img src="images/collage-1.jpg" alt="Angler with a trophy salmon catch" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 lg:w-36 z-[4]" style="top: 0%; left: 18%; transform: rotate(5deg);">
-          <img src="images/collage-2.jpg" alt="Fishing on the Columbia River" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 lg:w-40 z-[6]" style="top: 5%; left: 32%; transform: rotate(-3deg);">
-          <img src="images/collage-3.jpg" alt="Large sturgeon catch on the river" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 z-[3]" style="top: 1%; right: 28%; transform: rotate(7deg);">
-          <img src="images/collage-4.jpg" alt="Happy family fishing trip" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 lg:w-40 z-[5]" style="top: 3%; right: 10%; transform: rotate(-6deg);">
-          <img src="images/collage-5.jpg" alt="Fishing guide with trophy fish" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 z-[4]" style="top: 3%; right: 1%; transform: rotate(4deg);">
-          <img src="images/collage-6.jpg" alt="Columbia River fishing adventure" width="400" height="300" loading="lazy">
-        </div>
-
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 lg:w-40 z-[7]" style="top: 38%; left: 1%; transform: rotate(6deg);">
-          <img src="images/collage-7.jpg" alt="Fishing boat on calm river waters" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 z-[3]" style="top: 42%; left: 14%; transform: rotate(-5deg);">
-          <img src="images/collage-8.jpg" alt="Angler reeling in a big catch" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 z-[5]" style="top: 40%; right: 12%; transform: rotate(-4deg);">
-          <img src="images/collage-9.jpg" alt="Sunset fishing on the Columbia River" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 lg:w-36 z-[4]" style="top: 36%; right: 1%; transform: rotate(8deg);">
-          <img src="images/collage-10.jpg" alt="Professional guide boat excursion" width="400" height="300" loading="lazy">
-        </div>
-
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 z-[3] hidden sm:block" style="bottom: 5%; left: 8%; transform: rotate(-7deg);">
-          <img src="images/collage-11.jpg" alt="River landscape at golden hour" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 z-[4] hidden sm:block" style="bottom: 2%; left: 24%; transform: rotate(3deg);">
-          <img src="images/collage-12.jpg" alt="Mountain lake fishing scenery" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-28 sm:w-32 md:w-36 z-[3] hidden sm:block" style="bottom: 4%; right: 20%; transform: rotate(-5deg);">
-          <img src="images/collage-13.jpg" alt="Fly fishing on pristine waters" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 md:w-32 z-[4] hidden md:block" style="bottom: 1%; right: 5%; transform: rotate(6deg);">
-          <img src="images/collage-14.jpg" alt="Scenic river canyon view" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 z-[2] hidden lg:block" style="bottom: 8%; left: 42%; transform: rotate(-2deg);">
-          <img src="images/collage-15.jpg" alt="Fishing expedition group photo" width="400" height="300" loading="lazy">
-        </div>
-        <div class="polaroid absolute w-24 sm:w-28 z-[2] hidden lg:block" style="bottom: 6%; right: 35%; transform: rotate(4deg);">
-          <img src="images/collage-16.jpg" alt="Columbia River gorge fishing" width="400" height="300" loading="lazy">
-        </div>
-
-        <!-- Center Banner -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[92%] max-w-xl">
-          <div class="collage-banner px-6 py-4 md:px-10 md:py-5 text-center">
-            <p class="collage-banner-text font-handwritten">Trophy Fish. Real People. Real Memories.</p>
+    <section id="photos" class="collage-section texture-wood" aria-label="Photo gallery">
+        <div class="collage-stage">
+          <figure class="polaroid pol-1"><img src="images/stock/collage-1.jpg" alt="Angler with trophy catch" loading="lazy"></figure>
+          <figure class="polaroid pol-2"><img src="images/stock/collage-2.jpg" alt="Fishing on the river" loading="lazy"></figure>
+          <figure class="polaroid pol-3"><img src="images/stock/collage-3.jpg" alt="Fresh river fish" loading="lazy"></figure>
+          <figure class="polaroid pol-4"><img src="images/stock/collage-4.jpg" alt="Guide boat excursion" loading="lazy"></figure>
+          <figure class="polaroid pol-5"><img src="images/stock/collage-5.jpg" alt="Columbia River scenery" loading="lazy"></figure>
+          <figure class="polaroid pol-6"><img src="images/stock/collage-6.jpg" alt="Professional fishing guide" loading="lazy"></figure>
+          <figure class="polaroid pol-7"><img src="images/stock/collage-7.jpg" alt="Boat on calm waters" loading="lazy"></figure>
+          <figure class="polaroid pol-8"><img src="images/stock/collage-8.jpg" alt="Fly fishing adventure" loading="lazy"></figure>
+          <figure class="polaroid pol-9"><img src="images/stock/collage-9.jpg" alt="Reeling in a big catch" loading="lazy"></figure>
+          <figure class="polaroid pol-10"><img src="images/stock/collage-10.jpg" alt="Family fishing trip" loading="lazy"></figure>
+          <figure class="polaroid pol-11"><img src="images/stock/collage-11.jpg" alt="River canyon landscape" loading="lazy"></figure>
+          <figure class="polaroid pol-12"><img src="images/stock/collage-12.jpg" alt="Sunset on the water" loading="lazy"></figure>
+          <div class="collage-banner texture-parchment">
+            <p>Trophy Fish. Real People. Real Memories.</p>
           </div>
+        </div>
+    </section>
+
+    <section class="features texture-parchment torn" aria-labelledby="features-heading">
+      <div class="site-wrap">
+        <h2 class="sr-only" id="features-heading">Why Choose Us</h2>
+        <div class="features-grid">
+          <article class="feature-item fade-in">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <path d="M8 28c6-8 14-12 22-12s16 4 22 12"/><path d="M6 32h36"/><circle cx="24" cy="20" r="4"/>
+            </svg>
+            <h3>30+ Years Experience</h3>
+            <p>Decades of guiding on the Columbia River.</p>
+          </article>
+          <article class="feature-item fade-in">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <rect x="6" y="16" width="36" height="20" rx="2"/><path d="M6 24h36M14 16v-6h20v6"/>
+            </svg>
+            <h3>Heated Boats</h3>
+            <p>Fish in comfort year-round in our fully enclosed, heated boats.</p>
+          </article>
+          <article class="feature-item fade-in">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <path d="M10 24C10 16 16 10 24 10"/><path d="M38 24C38 32 32 38 24 38"/><circle cx="24" cy="24" r="5"/>
+            </svg>
+            <h3>Trophy Fish</h3>
+            <p>Target Sturgeon, Salmon, Walleye and Steelhead with proven techniques.</p>
+          </article>
+          <article class="feature-item fade-in">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <circle cx="18" cy="14" r="5"/><circle cx="30" cy="18" r="3.5"/><path d="M6 38c0-8 6-12 12-12s12 4 12 12"/><path d="M30 38c0-5 3-8 7-8"/>
+            </svg>
+            <h3>Family Friendly</h3>
+            <p>We welcome families and kids! Create memories that last.</p>
+          </article>
+          <article class="feature-item fade-in">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <path d="M24 4L6 12v12c0 10 8 18 18 20 10-2 18-10 18-20V12L24 4z"/><path d="M17 24l3 3 11-11"/>
+            </svg>
+            <h3>Licensed &amp; Insured</h3>
+            <p>Fully licensed, insured and committed to your safety on the water.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== FEATURES RIBBON ========== -->
-    <section class="features-ribbon torn-edge-both py-12 md:py-14 relative z-10" aria-label="Why choose us">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-5">
-          <!-- Feature 1 -->
-          <div class="text-center fade-in">
-            <div class="flex justify-center mb-3">
-              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 4C14 4 8 12 8 20C8 28 16 38 24 44C32 38 40 28 40 20C40 12 34 4 24 4Z"/><path d="M16 18C18 14 22 12 26 14"/><circle cx="18" cy="18" r="2"/><path d="M6 22L2 20"/><path d="M42 22L46 20"/></svg>
-            </div>
-            <h3 class="feature-title font-slab font-bold uppercase mb-2">30+ Years Experience</h3>
-            <p class="feature-desc font-body leading-relaxed">Decades of guiding on the Columbia River.</p>
-          </div>
-          <!-- Feature 2 -->
-          <div class="text-center fade-in">
-            <div class="flex justify-center mb-3">
-              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 36L24 14L44 36"/><path d="M12 36V40H36V36"/><rect x="20" y="26" width="8" height="6" rx="1"/><path d="M2 40H46"/></svg>
-            </div>
-            <h3 class="feature-title font-slab font-bold uppercase mb-2">Heated Boats</h3>
-            <p class="feature-desc font-body leading-relaxed">Fish in comfort year-round in our fully enclosed, heated boats.</p>
-          </div>
-          <!-- Feature 3 -->
-          <div class="text-center fade-in">
-            <div class="flex justify-center mb-3">
-              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 24C10 16 16 10 24 10"/><path d="M38 24C38 32 32 38 24 38"/><path d="M6 20L2 16"/><path d="M42 28L46 32"/><circle cx="24" cy="24" r="5"/></svg>
-            </div>
-            <h3 class="feature-title font-slab font-bold uppercase mb-2">Trophy Fish</h3>
-            <p class="feature-desc font-body leading-relaxed">Target Sturgeon, Salmon, Walleye and Steelhead with proven techniques.</p>
-          </div>
-          <!-- Feature 4 -->
-          <div class="text-center fade-in">
-            <div class="flex justify-center mb-3">
-              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="14" r="5"/><circle cx="30" cy="18" r="3.5"/><path d="M6 38C6 30 12 26 18 26C24 26 30 30 30 38"/><path d="M30 38C30 33 33 30 37 30"/></svg>
-            </div>
-            <h3 class="feature-title font-slab font-bold uppercase mb-2">Family Friendly</h3>
-            <p class="feature-desc font-body leading-relaxed">We welcome families and kids! Create memories that last.</p>
-          </div>
-          <!-- Feature 5 -->
-          <div class="text-center fade-in sm:col-span-2 lg:col-span-1">
-            <div class="flex justify-center mb-3">
-              <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 4L6 12V24C6 34 14 42 24 44C34 42 42 34 42 24V12L24 4Z"/><path d="M17 24L21 28L31 18"/></svg>
-            </div>
-            <h3 class="feature-title font-slab font-bold uppercase mb-2">Licensed &amp; Insured</h3>
-            <p class="feature-desc font-body leading-relaxed">Fully licensed, insured and committed to your safety on the water.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== MAIN CONTENT GRID ROW 1 ========== -->
-    <section class="bg-wood py-12 md:py-16" aria-label="Latest updates">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-
-          <!-- Fishing Report -->
-          <article id="fishing-reports" class="content-card fade-in flex flex-col">
-            <div class="ribbon-blue text-center py-2.5 px-4">
-              <h2 class="font-slab font-bold text-white text-xs tracking-[0.15em] uppercase">Latest Fishing Report</h2>
-            </div>
-            <div class="p-5 flex-1 flex flex-col">
-              <p class="font-slab font-bold text-navy text-xs tracking-wider uppercase mb-3">May 28, 2026</p>
-              <div class="mb-4 overflow-hidden rounded-sm border border-black/10">
-                <img src="images/fishing-report.jpg" alt="Fishing guide holding a fresh Columbia River catch" class="w-full h-44 object-cover" width="600" height="400" loading="lazy">
+    <section class="section-wood texture-wood" aria-label="Latest updates">
+      <div class="site-wrap">
+        <div class="cards-grid">
+          <article id="fishing-reports" class="content-card texture-parchment fade-in">
+            <header class="ribbon-blue"><h2>Latest Fishing Report</h2></header>
+            <div class="card-body">
+              <p class="card-date">May 28, 2026</p>
+              <div class="card-img">
+                <img src="images/stock/fishing-report.jpg" alt="Fishing guide with a fresh Columbia River catch" loading="lazy">
               </div>
-              <p class="text-xs text-gray-700 leading-relaxed flex-1">
-                Spring Chinook are running strong on the Columbia. Sturgeon action has been excellent near the John Day Dam. Water conditions are ideal for walleye fishing in the lower stretches. Book your trip now before spots fill up!
-              </p>
-              <a href="#" class="btn-gold inline-block text-center font-slab text-xs tracking-wider uppercase font-bold px-5 py-2.5 rounded mt-5">Read Full Report</a>
+              <p class="card-text">Spring Chinook are running strong on the Columbia. Sturgeon action has been excellent near the John Day Dam. Water conditions are ideal for walleye fishing in the lower stretches. Book your trip now before spots fill up!</p>
+              <a href="#" class="btn btn--gold btn--block">Read Full Report</a>
             </div>
           </article>
-
-          <!-- Heated Boats -->
-          <article class="content-card fade-in flex flex-col">
-            <div class="ribbon-red text-center py-2.5 px-4">
-              <h2 class="font-slab font-bold text-white text-xs tracking-[0.15em] uppercase">Our Heated Boats</h2>
-            </div>
-            <div class="p-5 flex-1 flex flex-col">
-              <div class="mb-4 overflow-hidden rounded-sm border border-black/10">
-                <img src="images/boat-interior.jpg" alt="Professional fishing rods and reels on a boat deck ready for the catch" class="w-full h-44 object-cover" width="600" height="400" loading="lazy">
+          <article class="content-card texture-parchment fade-in">
+            <header class="ribbon-red"><h2>Our Heated Boats</h2></header>
+            <div class="card-body">
+              <div class="card-img">
+                <img src="images/stock/boat-interior.jpg" alt="Fishing rods and reels on a professional guide boat" loading="lazy">
               </div>
-              <p class="text-xs text-gray-700 leading-relaxed flex-1">
-                Our fleet of Wooldridge boats features fully enclosed, heated cabins so you can fish in comfort regardless of the weather. Spacious seating, large windows, and top-of-the-line equipment make every trip enjoyable.
-              </p>
-              <a href="#" class="btn-primary inline-block text-center text-white font-slab text-xs tracking-wider uppercase font-bold px-5 py-2.5 rounded mt-5">Learn More</a>
+              <p class="card-text">Our fleet of Wooldridge boats features fully enclosed, heated cabins so you can fish in comfort regardless of the weather. Spacious seating, large windows, and top-of-the-line equipment make every trip enjoyable.</p>
+              <a href="#" class="btn btn--navy btn--block">Learn More</a>
             </div>
           </article>
-
-          <!-- Upcoming Trips -->
-          <article class="content-card fade-in flex flex-col">
-            <div class="p-5 pb-0">
-              <h2 class="font-slab font-bold text-navy text-sm tracking-[0.12em] uppercase text-center mb-4">Upcoming Trips</h2>
-            </div>
-            <div class="px-5 flex-1 flex flex-col items-center">
-              <p class="text-xs text-gray-700 leading-relaxed text-center mb-4">
-                Spots fill up fast! Book your trip today.
-              </p>
-              <div class="flex justify-center mb-4 flex-1 items-center">
-                <svg class="w-32 h-40" viewBox="0 0 120 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <article class="content-card texture-parchment fade-in">
+            <div class="card-body card-body--center">
+              <h2 class="card-title">Upcoming Trips</h2>
+              <p class="card-text">Spots fill up fast! Book your trip today.</p>
+              <div class="card-illus" aria-hidden="true">
+                <svg width="120" height="150" viewBox="0 0 120 150" fill="none">
                   <line x1="60" y1="10" x2="60" y2="140" stroke="#152238" stroke-width="2.5"/>
                   <path d="M55 10 L60 2 L65 10" fill="#8b1e2f"/>
                   <ellipse cx="60" cy="130" rx="18" ry="12" fill="none" stroke="#152238" stroke-width="2"/>
                   <circle cx="60" cy="130" r="6" fill="#c9a227" stroke="#152238" stroke-width="1.5"/>
                   <path d="M42 130 Q30 125 25 115" stroke="#152238" stroke-width="1.5" fill="none"/>
                   <path d="M78 130 Q90 125 95 115" stroke="#152238" stroke-width="1.5" fill="none"/>
-                  <line x1="25" y1="115" x2="20" y2="105" stroke="#152238" stroke-width="1"/>
-                  <line x1="95" y1="115" x2="100" y2="105" stroke="#152238" stroke-width="1"/>
                 </svg>
               </div>
-              <a href="tel:5094904666" class="btn-primary inline-block text-center text-white font-slab text-xs tracking-wider uppercase font-bold px-5 py-2.5 rounded mt-auto mb-5 w-full">Check Availability</a>
+              <a href="tel:5094904666" class="btn btn--navy btn--block">Check Availability</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== SECONDARY INFO GRID ROW 2 ========== -->
-    <section class="bg-wood pb-12 md:pb-16" aria-label="Services">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-
-          <!-- Rates -->
-          <article id="rates" class="content-card fade-in p-6 text-center flex flex-col items-center">
-            <div class="mb-4">
-              <svg class="w-24 h-28 mx-auto" viewBox="0 0 96 112" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="8" y="4" width="80" height="100" rx="4" fill="#f2e8d5" stroke="#152238" stroke-width="2"/>
-                <circle cx="48" cy="20" r="8" fill="none" stroke="#8b1e2f" stroke-width="2"/>
-                <line x1="48" y1="12" x2="48" y2="28" stroke="#8b1e2f" stroke-width="1.5"/>
-                <text x="48" y="50" text-anchor="middle" font-family="Arvo, serif" font-weight="700" font-size="10" fill="#152238">RATES</text>
-                <line x1="20" y1="58" x2="76" y2="58" stroke="#c9a227" stroke-width="1"/>
-                <text x="48" y="72" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="7" fill="#3d3d3d">HALF &amp; FULL DAY</text>
-                <text x="48" y="84" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="7" fill="#3d3d3d">TRIPS AVAILABLE</text>
-              </svg>
+    <section class="section-wood section-wood--tight texture-wood" aria-label="Services">
+      <div class="site-wrap">
+        <div class="cards-grid">
+          <article id="rates" class="content-card texture-parchment fade-in">
+            <div class="card-body card-body--center">
+              <div class="card-visual" aria-hidden="true">
+                <svg width="96" height="112" viewBox="0 0 96 112" fill="none">
+                  <rect x="8" y="4" width="80" height="100" rx="4" fill="#f2e8d5" stroke="#152238" stroke-width="2"/>
+                  <circle cx="48" cy="20" r="8" fill="none" stroke="#8b1e2f" stroke-width="2"/>
+                  <line x1="48" y1="12" x2="48" y2="28" stroke="#8b1e2f" stroke-width="1.5"/>
+                  <text x="48" y="50" text-anchor="middle" font-family="Arvo, serif" font-weight="700" font-size="10" fill="#152238">RATES</text>
+                  <line x1="20" y1="58" x2="76" y2="58" stroke="#c9a227" stroke-width="1"/>
+                  <text x="48" y="72" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="7" fill="#3d3d3d">HALF &amp; FULL DAY</text>
+                  <text x="48" y="84" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="7" fill="#3d3d3d">TRIPS AVAILABLE</text>
+                </svg>
+              </div>
+              <p class="card-text">Affordable rates for half day and full day trips. Custom trips available.</p>
+              <a href="#" class="btn btn--navy btn--block">View Rates</a>
             </div>
-            <p class="text-xs text-gray-700 leading-relaxed mb-5 flex-1">
-              Affordable rates for half day and full day trips. Custom trips available.
-            </p>
-            <a href="#" class="btn-primary inline-block text-white font-slab text-xs tracking-wider uppercase font-bold px-5 py-2.5 rounded">View Rates</a>
           </article>
-
-          <!-- Lodging -->
-          <article id="lodging" class="content-card fade-in p-6 text-center flex flex-col items-center">
-            <div class="mb-4 w-full overflow-hidden rounded-sm border border-black/10">
-              <img src="images/lodge.jpg" alt="Beautiful wooden lodge near the Columbia River" class="w-full h-36 object-cover" width="600" height="400" loading="lazy">
+          <article id="lodging" class="content-card texture-parchment fade-in">
+            <div class="card-body card-body--center">
+              <div class="card-visual">
+                <img src="images/stock/lodge.jpg" alt="Comfortable lodge near the Columbia River" loading="lazy">
+              </div>
+              <p class="card-text">We offer great lodging options close to the river for a comfortable stay.</p>
+              <a href="#" class="btn btn--navy btn--block">View Lodging</a>
             </div>
-            <p class="text-xs text-gray-700 leading-relaxed mb-5 flex-1">
-              We offer great lodging options close to the river for a comfortable stay.
-            </p>
-            <a href="#" class="btn-primary inline-block text-white font-slab text-xs tracking-wider uppercase font-bold px-5 py-2.5 rounded">View Lodging</a>
           </article>
-
-          <!-- Gift Certificates -->
-          <article class="content-card fade-in p-6 text-center flex flex-col items-center">
-            <div class="mb-4">
-              <svg class="w-36 h-28 mx-auto" viewBox="0 0 144 112" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="4" y="8" width="136" height="88" rx="3" fill="#f2e8d5" stroke="#152238" stroke-width="2"/>
-                <rect x="4" y="8" width="136" height="20" fill="#152238" rx="3"/>
-                <text x="72" y="22" text-anchor="middle" font-family="Great Vibes, cursive" font-size="14" fill="#c9a227">Gift Certificate</text>
-                <text x="72" y="52" text-anchor="middle" font-family="Arvo, serif" font-weight="700" font-size="9" fill="#152238" letter-spacing="1">MID COLUMBIA RIVER</text>
-                <text x="72" y="64" text-anchor="middle" font-family="Arvo, serif" font-size="7" fill="#152238">GUIDE SERVICE</text>
-                <line x1="30" y1="74" x2="114" y2="74" stroke="#c9a227" stroke-width="1"/>
-                <text x="72" y="86" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="6" fill="#8b1e2f">THE PERFECT GIFT</text>
-                <circle cx="12" cy="52" r="6" fill="none" stroke="#c9a227" stroke-width="1.5"/>
-                <circle cx="132" cy="52" r="6" fill="none" stroke="#c9a227" stroke-width="1.5"/>
-              </svg>
+          <article class="content-card texture-parchment fade-in">
+            <div class="card-body card-body--center">
+              <div class="card-visual" aria-hidden="true">
+                <svg width="144" height="112" viewBox="0 0 144 112" fill="none">
+                  <rect x="4" y="8" width="136" height="88" rx="3" fill="#f2e8d5" stroke="#152238" stroke-width="2"/>
+                  <rect x="4" y="8" width="136" height="20" fill="#152238" rx="3"/>
+                  <text x="72" y="22" text-anchor="middle" font-family="Great Vibes, cursive" font-size="14" fill="#c9a227">Gift Certificate</text>
+                  <text x="72" y="52" text-anchor="middle" font-family="Arvo, serif" font-weight="700" font-size="9" fill="#152238">MID COLUMBIA RIVER</text>
+                  <text x="72" y="64" text-anchor="middle" font-family="Arvo, serif" font-size="7" fill="#152238">GUIDE SERVICE</text>
+                  <line x1="30" y1="74" x2="114" y2="74" stroke="#c9a227" stroke-width="1"/>
+                  <text x="72" y="86" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="6" fill="#8b1e2f">THE PERFECT GIFT</text>
+                </svg>
+              </div>
+              <p class="card-text">The perfect gift for any fishing enthusiast!</p>
+              <a href="#" class="btn btn--navy btn--block">Buy Gift Certificate</a>
             </div>
-            <p class="text-xs text-gray-700 leading-relaxed mb-5 flex-1">
-              The perfect gift for any fishing enthusiast!
-            </p>
-            <a href="#" class="btn-primary inline-block text-white font-slab text-xs tracking-wider uppercase font-bold px-5 py-2.5 rounded">Buy Gift Certificate</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== TESTIMONIALS ========== -->
-    <section id="about" class="bg-parchment torn-edge-both py-14 md:py-16 relative z-10" aria-label="Customer testimonials">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-center gap-4 mb-10 fade-in">
-          <div class="decor-line hidden sm:block"></div>
-          <span class="text-navy text-lg">&#9733;</span>
-          <h2 class="font-slab font-bold text-navy text-lg sm:text-xl md:text-2xl tracking-wider uppercase text-center">The Columbia River Is Calling</h2>
-          <span class="text-navy text-lg">&#9733;</span>
-          <div class="decor-line hidden sm:block"></div>
+    <section id="about" class="testimonials texture-parchment torn" aria-labelledby="testimonials-heading">
+      <div class="site-wrap">
+        <div class="testimonials-head fade-in">
+          <span class="line" aria-hidden="true"></span>
+          <span class="star" aria-hidden="true">★</span>
+          <h2 id="testimonials-heading">The Columbia River Is Calling</h2>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="line" aria-hidden="true"></span>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          <!-- Testimonial 1 -->
-          <blockquote class="text-center fade-in">
-            <p class="testimonial-quote mb-1">&ldquo;</p>
-            <p class="text-xs text-gray-700 leading-relaxed italic mb-4">
-              Absolutely the best fishing experience we've ever had! The guide knew exactly where to find sturgeon and we landed a monster. Can't wait to come back next season.
-            </p>
-            <div class="flex justify-center gap-0.5 mb-2" aria-label="5 out of 5 stars">
-              <span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span>
-            </div>
-            <cite class="font-slab text-navy text-xs not-italic font-bold">— Mark T., Portland, OR</cite>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial fade-in">
+            <p class="quote" aria-hidden="true">&ldquo;</p>
+            <p>Absolutely the best fishing experience we've ever had! The guide knew exactly where to find sturgeon and we landed a monster. Can't wait to come back next season.</p>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <cite>— Mark T., Portland, OR</cite>
           </blockquote>
-
-          <!-- Testimonial 2 -->
-          <blockquote class="text-center fade-in">
-            <p class="testimonial-quote mb-1">&ldquo;</p>
-            <p class="text-xs text-gray-700 leading-relaxed italic mb-4">
-              Took my two boys out for their first salmon trip and the crew was incredible with the kids. Patient, knowledgeable, and the heated boat made it comfortable all day long.
-            </p>
-            <div class="flex justify-center gap-0.5 mb-2" aria-label="5 out of 5 stars">
-              <span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span>
-            </div>
-            <cite class="font-slab text-navy text-xs not-italic font-bold">— Sarah M., Seattle, WA</cite>
+          <blockquote class="testimonial fade-in">
+            <p class="quote" aria-hidden="true">&ldquo;</p>
+            <p>Took my two boys out for their first salmon trip and the crew was incredible with the kids. Patient, knowledgeable, and the heated boat made it comfortable all day long.</p>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <cite>— Sarah M., Seattle, WA</cite>
           </blockquote>
-
-          <!-- Testimonial 3 -->
-          <blockquote class="text-center fade-in">
-            <p class="testimonial-quote mb-1">&ldquo;</p>
-            <p class="text-xs text-gray-700 leading-relaxed italic mb-4">
-              Professional from start to finish. Great communication, top-notch equipment, and we limited out on walleye before noon. Highly recommend for anyone visiting the Tri-Cities area.
-            </p>
-            <div class="flex justify-center gap-0.5 mb-2" aria-label="5 out of 5 stars">
-              <span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span><span class="star-gold text-sm">&#9733;</span>
-            </div>
-            <cite class="font-slab text-navy text-xs not-italic font-bold">— James R., Boise, ID</cite>
+          <blockquote class="testimonial fade-in">
+            <p class="quote" aria-hidden="true">&ldquo;</p>
+            <p>Professional from start to finish. Great communication, top-notch equipment, and we limited out on walleye before noon. Highly recommend for anyone visiting the Tri-Cities area.</p>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <cite>— James R., Boise, ID</cite>
           </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- ========== BOOKING CTA ========== -->
-    <section id="contact" class="relative py-16 md:py-24" aria-label="Book your trip">
-      <div class="absolute inset-0">
-        <img src="images/cta-sunset.jpg" alt="Fishing boat on the Columbia River at sunset" class="w-full h-full object-cover" width="1920" height="1080" loading="lazy">
-        <div class="cta-overlay absolute inset-0"></div>
-      </div>
-      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center fade-in">
-        <h2 class="font-slab font-bold text-white text-2xl sm:text-3xl md:text-4xl tracking-wider uppercase mb-3">
-          Ready to Book Your Trip?
-        </h2>
-        <p class="font-script text-brand-gold text-2xl sm:text-3xl md:text-4xl mb-6">Let's go catch some fish!</p>
-        <div class="flex items-center justify-center gap-4 md:gap-6">
-          <svg class="w-8 h-8 md:w-10 md:h-10 text-brand-gold hidden sm:block" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true"><path d="M30 5L10 20L30 35V5Z"/></svg>
-          <a href="tel:5094904666" class="font-slab font-bold text-brand-gold text-3xl sm:text-4xl md:text-5xl tracking-wide phone-link hover:text-brand-gold">(509) 490-4666</a>
-          <svg class="w-8 h-8 md:w-10 md:h-10 text-brand-gold hidden sm:block rotate-180" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true"><path d="M30 5L10 20L30 35V5Z"/></svg>
+    <section id="contact" class="cta" aria-labelledby="cta-heading">
+      <img class="cta__bg" src="images/stock/cta-sunset.jpg" alt="" loading="lazy">
+      <div class="cta__overlay" aria-hidden="true"></div>
+      <div class="site-wrap fade-in">
+        <h2 id="cta-heading">Ready to Book Your Trip?</h2>
+        <p class="script">Let's go catch some fish!</p>
+        <div class="cta-phone-row">
+          <svg class="arrow" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true"><path d="M30 5L10 20L30 35V5Z"/></svg>
+          <a href="tel:5094904666" class="cta-phone phone-link">(509) 490-4666</a>
+          <svg class="arrow" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true" style="transform:scaleX(-1)"><path d="M30 5L10 20L30 35V5Z"/></svg>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
-    <!-- Desktop: pixel-perfect reference with link overlays -->
-    <div class="hidden md:flex justify-center w-full bg-[#0c1018]">
-      <div class="relative w-full max-w-[1024px]">
-      <img
-        src="images/footer-reference.png"
-        alt="Mid Columbia River Guide Service footer"
-        class="w-full h-auto block"
-        width="1024"
-        height="156"
-      >
-      <a href="#" class="absolute top-0 left-0 w-[21%] h-[78%] z-10" aria-label="Mid Columbia River Guide Service Home"><span class="sr-only">Home</span></a>
-      <a href="mailto:info@midcolumbiariverguideservice.com" class="absolute top-[34%] left-[22%] w-[20%] h-[12%] z-10" aria-label="Email info@midcolumbiariverguideservice.com"><span class="sr-only">info@midcolumbiariverguideservice.com</span></a>
-      <a href="#" class="absolute top-[34%] left-[42%] w-[10%] h-[10%] z-10"><span class="sr-only">Home</span></a>
-      <a href="#rates" class="absolute top-[46%] left-[42%] w-[10%] h-[10%] z-10"><span class="sr-only">Rates</span></a>
-      <a href="#photos" class="absolute top-[58%] left-[42%] w-[12%] h-[10%] z-10"><span class="sr-only">Photos</span></a>
-      <a href="#fishing-reports" class="absolute top-[68%] left-[42%] w-[18%] h-[10%] z-10"><span class="sr-only">Fishing Reports</span></a>
-      <a href="#lodging" class="absolute top-[34%] left-[54%] w-[11%] h-[10%] z-10"><span class="sr-only">Lodging</span></a>
-      <a href="#about" class="absolute top-[46%] left-[54%] w-[12%] h-[10%] z-10"><span class="sr-only">About Us</span></a>
-      <a href="#contact" class="absolute top-[58%] left-[54%] w-[11%] h-[10%] z-10"><span class="sr-only">Contact</span></a>
-      </div>
-    </div>
-
-    <!-- Mobile: semantic HTML fallback -->
-    <div class="md:hidden site-footer-inner">
-      <div class="site-footer-grid site-footer-grid-mobile">
-        <div class="site-footer-col site-footer-logo-col">
-          <a href="#" aria-label="Mid Columbia River Guide Service Home">
-            <img
-              src="images/footer-logo.png"
-              alt="Mid Columbia River Guide Service — Since 1994"
-              class="footer-logo-img"
-              width="195"
-              height="114"
-            >
-          </a>
-        </div>
-
-        <div class="site-footer-col site-footer-contact">
-          <address class="not-italic">
-            <p>P.O. BOX 1234</p>
-            <p>RICHLAND, WA 99352</p>
-            <p><a href="mailto:info@midcolumbiariverguideservice.com" class="footer-link">info@midcolumbiariverguideservice.com</a></p>
+    <div class="site-wrap">
+      <div class="footer-grid">
+        <a href="#" class="footer-col footer-brand">
+          <svg class="footer-brand__fish" viewBox="0 0 120 60" fill="none" aria-hidden="true">
+            <path d="M8 30 C20 18 40 14 58 20 C72 25 82 22 95 14 L108 30 L95 46 C82 38 72 35 58 40 C40 46 20 42 8 30 Z" fill="#c8cdd3" opacity="0.9"/>
+            <circle cx="72" cy="28" r="3" fill="#0c1018"/>
+          </svg>
+          <span class="name">MID COLUMBIA</span>
+          <span class="sub">River Guide Service &mdash; Since 1994</span>
+        </a>
+        <div class="footer-col footer-contact">
+          <address>
+            <p>P.O. Box 1234</p>
+            <p>Richland, WA 99352</p>
+            <p><a href="mailto:info@midcolumbiariverguideservice.com">info@midcolumbiariverguideservice.com</a></p>
           </address>
         </div>
-
-        <div class="site-footer-col site-footer-links">
-          <h3 class="site-footer-heading">QUICK LINKS</h3>
-          <div class="footer-links-grid">
-            <ul class="footer-link-list">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#rates" class="footer-link">Rates</a></li>
-              <li><a href="#photos" class="footer-link">Photos</a></li>
-              <li><a href="#fishing-reports" class="footer-link">Fishing Reports</a></li>
-            </ul>
-            <ul class="footer-link-list">
-              <li><a href="#lodging" class="footer-link">Lodging</a></li>
-              <li><a href="#about" class="footer-link">About Us</a></li>
-              <li><a href="#contact" class="footer-link">Contact</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#rates">Rates</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#fishing-reports">Fishing Reports</a></li>
+            <li><a href="#lodging">Lodging</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-
-        <div class="site-footer-col site-footer-members">
-          <h3 class="site-footer-heading">PROUD MEMBER</h3>
-          <div class="footer-member-logos">
-            <img src="images/footer-wfg-logo.png" alt="Washington Fishing Guides" width="122" height="53">
-            <img src="images/footer-nga-logo.png" alt="Northwest Guide Association" width="133" height="53">
+        <div class="footer-col footer-members">
+          <h3 class="footer-heading">Proud Member</h3>
+          <div class="footer-badges">
+            <div class="footer-badge">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 36 L16 12 L24 28 L32 8 L40 36 Z"/>
+                <path d="M6 38 H42"/>
+              </svg>
+              <span>Washington Fishing Guides</span>
+            </div>
+            <div class="footer-badge">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="24" cy="24" r="18"/>
+                <path d="M12 32 Q24 16 36 32"/>
+              </svg>
+              <span>Northwest Guide Association</span>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="site-footer-copyright">
-        <p>&copy; 2026 Mid Columbia River Guide Service. All Rights Reserved.</p>
-      </div>
+      <p class="footer-copy">&copy; 2026 Mid Columbia River Guide Service. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>
