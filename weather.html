@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Current Columbia River weather and fishing conditions — temperature, wind, water level and best fishing times.">
+  <title>River Weather &amp; Conditions | Mid Columbia River Guide Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lora:ital,wght@0,400;0,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="inner-page">
+
+  <header class="site-header" id="site-header">
+    <div class="header-top texture-header"><div class="site-wrap">
+      <a href="index.html" class="brand-logo"><svg class="fish-icon brand-logo__fish" viewBox="0 0 144 72" fill="none"><g class="fish-icon__swim"><path class="fish-icon__body" d="M6 36 C6 26 16 18 34 16 C52 14 78 16 92 24 C98 28 100 32 100 36 C100 40 98 44 92 48 C78 56 52 58 34 56 C16 54 6 46 6 36Z" fill="var(--fish-body)"/></g></svg><span class="brand-logo__title">MID COLUMBIA</span><span class="brand-logo__sub">RIVER GUIDE SERVICE</span></a>
+      <div class="header-contact"><a href="tel:5094904666" class="header-phone phone-link">(509) 490-4666</a></div>
+    </div></div>
+    <nav class="nav-bar"><div class="site-wrap"><div class="nav-desktop">
+      <a href="index.html" class="nav-link">Home</a><span class="nav-divider"></span>
+      <a href="rates.html" class="nav-link">Rates</a><span class="nav-divider"></span>
+      <a href="photos.html" class="nav-link">Photos</a><span class="nav-divider"></span>
+      <a href="maps.html" class="nav-link">Maps</a><span class="nav-divider"></span>
+      <a href="lodging.html" class="nav-link">Lodging</a><span class="nav-divider"></span>
+      <a href="calendar.html" class="nav-link">Calendar</a><span class="nav-divider"></span>
+      <a href="weather.html" class="nav-link is-active">Weather</a><span class="nav-divider"></span>
+      <a href="about.html" class="nav-link">About</a><span class="nav-divider"></span>
+          <a href="contact.html" class="nav-link">Contact</a>
+    </div><button class="nav-toggle" id="nav-toggle" aria-label="Open menu"><span class="hamburger" id="hamburger"><span></span><span></span><span></span></span></button></div></nav>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <nav class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="rates.html">Rates</a><a href="photos.html">Photos</a><a href="maps.html">Maps</a><a href="lodging.html">Lodging</a><a href="calendar.html">Calendar</a><a href="weather.html" class="is-active">Weather</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+
+  <main class="page-main texture-page">
+    <section class="page-hero page-hero--premium">
+      <img class="page-hero__bg" src="images/pages/hero-weather.png?v=4" alt="Boat on river under morning sky" width="1920" height="640" data-pos="center">
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content"><div class="site-wrap">
+        <h1 class="page-hero__title">River Weather &amp; Conditions</h1>
+        <p class="page-hero__sub">Current conditions on the Columbia, Snake, &amp; Clearwater Rivers.</p>
+      </div></div>
+    </section>
+    <div class="rope-divider"></div>
+
+    <section class="page-section">
+      <div class="site-wrap">
+        <div class="page-intro">
+          <p>Check current river conditions before your trip. Wind, water level, and flow rate all affect fishing success on the Columbia. Our guides monitor conditions daily and will advise if a reschedule is recommended.</p>
+        </div>
+        <div class="forecast-strip" aria-label="7-day forecast">
+          <div class="forecast-day"><span class="forecast-day__name">Mon</span><span class="forecast-day__temp">58°</span><span class="forecast-day__cond">Partly Cloudy</span></div>
+          <div class="forecast-day"><span class="forecast-day__name">Tue</span><span class="forecast-day__temp">62°</span><span class="forecast-day__cond">Sunny</span></div>
+          <div class="forecast-day"><span class="forecast-day__name">Wed</span><span class="forecast-day__temp">55°</span><span class="forecast-day__cond">Light Rain</span></div>
+          <div class="forecast-day"><span class="forecast-day__name">Thu</span><span class="forecast-day__temp">59°</span><span class="forecast-day__cond">Cloudy</span></div>
+          <div class="forecast-day"><span class="forecast-day__name">Fri</span><span class="forecast-day__temp">61°</span><span class="forecast-day__cond">Clear</span></div>
+          <div class="forecast-day"><span class="forecast-day__name">Sat</span><span class="forecast-day__temp">64°</span><span class="forecast-day__cond">Sunny</span></div>
+          <div class="forecast-day"><span class="forecast-day__name">Sun</span><span class="forecast-day__temp">60°</span><span class="forecast-day__cond">Partly Cloudy</span></div>
+        </div>
+        <div class="weather-cards">
+          <div class="weather-card">
+            <svg class="weather-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <p class="weather-card__value">55°F</p>
+            <p class="weather-card__label">Low 45°F / High 62°F</p>
+          </div>
+          <div class="weather-card">
+            <svg class="weather-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+            <p class="weather-card__value">5 mph</p>
+            <p class="weather-card__label">Gentle Breeze</p>
+          </div>
+          <div class="weather-card">
+            <svg class="weather-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            <p class="weather-card__value">7.2 ft</p>
+            <p class="weather-card__label">Normal Level</p>
+          </div>
+          <div class="weather-card">
+            <svg class="weather-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <p class="weather-card__value">Clear</p>
+            <p class="weather-card__label">5+ Miles Visibility</p>
+          </div>
+        </div>
+
+        <div class="weather-panel">
+          <div class="weather-panel__head">
+            <div>
+              <h3>Today's Columbia River Conditions</h3>
+              <p style="margin:4px 0 0;font-size:10px;">Columbia River, WA &amp; OR</p>
+            </div>
+            <div class="weather-badge">Best Fishing Time Today</div>
+          </div>
+          <div class="weather-panel__body">
+            <p><strong>Flow Rate:</strong> 153,000 CFS (Normal)</p>
+            <p style="margin-top:8px;"><strong>Best Window:</strong> 5:05 PM – 7:55 PM</p>
+            <p style="margin-top:8px;">Conditions are favorable for salmon and sturgeon fishing today. Light winds and normal water levels make for comfortable boating. Contact us to confirm your trip.</p>
+          </div>
+        </div>
+        <div class="content-split" style="margin-top:1.25rem;">
+          <div class="info-panel">
+            <h3>Fishing Tips for Today's Conditions</h3>
+            <ul>
+              <li>Light wind — ideal for bottom fishing and sturgeon</li>
+              <li>Normal flow — salmon holding in traditional runs</li>
+              <li>Best bite window: late afternoon (5–8 PM)</li>
+              <li>Water temp rising — walleye moving to shallow flats</li>
+            </ul>
+          </div>
+          <div class="info-panel">
+            <h3>River Resources</h3>
+            <p>Monitor USGS flow data and Bonneville Dam fish counts for real-time updates. Our guides adjust techniques based on daily conditions — that's the advantage of fishing with a local expert.</p>
+            <p style="margin-top:8px;"><a href="calendar.html">View fishing calendar &amp; availability →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-cta">
+      <img class="page-cta__bg" src="images/client/card-12.png?v=1" alt="">
+      <div class="page-cta__overlay"></div>
+      <div class="site-wrap">
+        <h2>Book Your Fishing Trip Today!</h2>
+        <a href="tel:5094904666" class="page-cta__phone phone-link">Call Now (509) 490-4666</a>
+        <div><a href="contact.html" class="btn--orange">Book Your Trip</a></div>
+      </div>
+    </section>
+  </main>
+
+<section class="page-contact-band" aria-label="Contact us">
+  <div class="site-wrap">
+    <div class="page-contact-band__inner">
+      <div class="page-contact-band__text">
+        <h2>Ready to Book Your Trip?</h2>
+        <p>Call today or send a message — we respond within 24 hours.</p>
+      </div>
+      <a href="tel:5094904666" class="page-contact-band__phone phone-link">(509) 490-4666</a>
+      <div class="page-contact-band__actions">
+        <a href="contact.html" class="btn--orange">Contact Us</a>
+        <a href="rates.html#booking" class="btn--leather">Request Booking</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer texture-footer">
+  <div class="footer-accent" aria-hidden="true"></div>
+  <div class="site-wrap">
+    <div class="footer-grid">
+      <a href="index.html" class="footer-col footer-brand" aria-label="Mid Columbia River Guide Service — Since 1994">
+        <svg class="fish-icon fish-icon--light footer-brand__fish" viewBox="0 0 144 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g class="fish-icon__swim">
+            <g class="fish-icon__tail">
+              <path d="M98 36 L134 12 L118 36 L134 60 L98 36Z" fill="var(--fish-tail)"/>
+              <path d="M98 36 L128 36" stroke="var(--fish-outline)" stroke-width="0.75" opacity="0.35"/>
+            </g>
+            <path class="fish-icon__body" d="M6 36 C6 26 16 18 34 16 C52 14 78 16 92 24 C98 28 100 32 100 36 C100 40 98 44 92 48 C78 56 52 58 34 56 C16 54 6 46 6 36Z" fill="var(--fish-body)"/>
+            <path d="M18 38 C34 46 68 46 88 38 C76 50 42 52 22 46 C16 44 14 40 18 38Z" fill="var(--fish-belly)" opacity="0.55"/>
+            <path d="M36 22 L40 18 M48 20 L52 16 M58 21 L62 17 M68 23 L72 19 M78 25 L82 21" stroke="var(--fish-scute)" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M60 18 C64 10 72 8 78 16 L74 21 Z" fill="var(--fish-fin)"/>
+            <g class="fish-icon__pectoral">
+              <path d="M44 42 L30 58 L50 46 Z" fill="var(--fish-fin)"/>
+            </g>
+            <path d="M6 36 L2 33 L2 39 Z" fill="var(--fish-body)"/>
+            <path d="M12 42 L8 52 M15 40 L11 50 M18 38 L14 48" stroke="var(--fish-accent)" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+            <circle cx="30" cy="31" r="4" fill="var(--fish-eye-bg)"/>
+            <circle cx="31" cy="30.5" r="2.2" fill="var(--fish-eye)"/>
+            <circle cx="31.8" cy="29.8" r="0.75" fill="#fff" opacity="0.95"/>
+            <ellipse cx="38" cy="39" rx="4.5" ry="2.8" fill="var(--fish-accent)" opacity="0.8"/>
+            <path d="M52 30 Q62 36 52 42 M66 28 Q78 36 66 44 M80 30 Q92 36 80 42" stroke="var(--fish-scute)" stroke-width="0.65" fill="none" opacity="0.3"/>
+          </g>
+        </svg>
+        <span class="footer-brand__title">MID COLUMBIA</span>
+        <span class="footer-brand__sub">River Guide Service</span>
+        <span class="footer-brand__since">&mdash; Since 1994 &mdash;</span>
+      </a>
+
+      <div class="footer-col footer-contact">
+        <address>
+          <p>P.O. Box 1234</p>
+          <p>Richland, WA 99352</p>
+          <p><a href="mailto:info@midcolumbiariverguideservice.com">info@midcolumbiariverguideservice.com</a></p>
+        </address>
+        <a href="tel:5094904666" class="footer-phone phone-link">(509) 490-4666</a>
+      </div>
+
+      <div class="footer-col footer-links-col">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="weather.html">Weather</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-members">
+        <h3 class="footer-heading">Proud Member</h3>
+        <div class="footer-badges">
+          <img src="images/footer-wfg-logo.png" alt="Washington Fishing Guides" class="footer-badge-img" width="120" height="80" loading="lazy">
+          <img src="images/footer-nga-logo.png" alt="Northwest Guide Association" class="footer-badge-img" width="120" height="80" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="footer-social">
+        <a href="#" class="footer-social-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" class="footer-social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Mid Columbia River Guide Service. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.js"></script><script src="js/pages.js"></script>
+</body>
+</html>
